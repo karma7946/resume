@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -33,6 +33,10 @@ nav a {
     transition: background-color 0.3s;
 }
 
+nav a.current {
+    background-color: #45a049; /* Highlight for active page */
+}
+
 nav a:hover {
     background-color: #45a049;
 }
@@ -62,14 +66,39 @@ main {
     transform: scale(1.1); /* Slightly enlarge photo on hover */
 }
 
-.profile-description {
-    max-width: 600px; /* Limit width of text */
-}
-
 footer {
     margin-top: 40px;
     padding: 10px 0;
     text-align: center;
     font-size: 0.9em;
     color: #777;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
 }
